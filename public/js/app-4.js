@@ -1,5 +1,5 @@
-
-class ProductList extends React.Component {
+import React, { Component, propType } from 'react';
+class ProductList extends Component {
   render() {
     const productComponents = Seed.products.map((product) => (
       <Product
@@ -21,7 +21,7 @@ class ProductList extends React.Component {
   }
 }
 
-class Product extends React.Component {
+class Product extends Component {
   render() {
     return (
       <div className='item'>
