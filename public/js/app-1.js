@@ -8,7 +8,8 @@ class ProductList extends React.Component {
   }
 }
 
+
 ReactDOM.render(
-  <ProductList />,
-  document.getElementById('content')
+    <ProductList/>,
+    document.getElementById('content')
 );

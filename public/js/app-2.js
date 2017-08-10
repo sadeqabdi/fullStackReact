@@ -1,5 +1,4 @@
-import React, { Component, propType } from 'react';
-class ProductList extends Component {
+class ProductList extends React.Component {
   render() {
     return (
       <div className='ui unstackable items'>
@@ -9,7 +8,7 @@ class ProductList extends Component {
   }
 }
 
-class Product extends Component {
+class Product extends React.Component {
   render() {
     return (
       <div className='item'>
