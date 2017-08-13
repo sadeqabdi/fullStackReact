@@ -16,6 +16,7 @@ class ProductList extends Component {
     return (
       <div className='ui unstackable items'>
         {productComponents}
+        <Product />
       </div>
     );
   }

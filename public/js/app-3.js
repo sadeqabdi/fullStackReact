@@ -1,18 +1,20 @@
 import React, { Component, propType } from 'react';
 class ProductList extends Component {
   render() {
-    const product = Seed.products[0];
+    const productRender = Seed.products.map((product) => (
+            <Product
+                id={product.id}
+                title={product.title}
+                description={product.description}
+                url={product.url}
+                votes={product.votes}
+                submitterAvatarUrl={product.submitterAvatarUrl}
+                productImageUrl={product.productImageUrl}
+            />
+        ));
     return (
       <div className='ui unstackable items'>
-        <Product
-          id={product.id}
-          title={product.title}
-          description={product.description}
-          url={product.url}
-          votes={product.votes}
-          submitterAvatarUrl={product.submitterAvatarUrl}
-          productImageUrl={product.productImageUrl}
-        />
+            {productRender}
       </div>
     );
   }
